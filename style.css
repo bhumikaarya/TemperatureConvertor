@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/1323823418/photo/low-angle-view-thermometer-on-blue-sky-with-sun-shining.jpg?s=612x612&w=0&k=20&c=LwLCGF902C-DNwKgCMCR12zFnB4g1INWzlk1JPOidRk=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #7f3c44;
+}
+
+.container {
+    background: 10px solid black; 
+    background-color: rgb(187, 147, 27);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 10px rgba(13, 14, 13, 0.3);
+    width: 80%;
+    max-width: 700px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.temp-container {
+    width: 90%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 60%;
+    font-family: monospace;
+    padding: 5px;
+    outline: none;
+    background: rgba(61, 8, 219, 0.3);
+    border-color: rgba(14, 14, 14, 0.6);
+    color: rgb(142, 67, 35);
+    font-size: 19px;
+}
+
+input::placeholder {
+    color: rgb(166, 162, 163);
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    input {
+        width: 60%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 100%;
+    }
+
+    input {
+        width: 60%;
+    }
+}
